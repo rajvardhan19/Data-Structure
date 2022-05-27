@@ -270,8 +270,9 @@ string = "this is a string"
 newString=""
 
 for character in string:
-    newString + character
+    newString += character
 ```
 The operation above has a time complexity of **O(n²)** where n is the length of `string`, because each addition of a character to `newString` creates an entirely new string and is itself an **O(n)** operation. Therefore, n O(n) operations are performed, leading to an O(n²) time-complexity operation overall.
 
 ***
+
