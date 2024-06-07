@@ -6,12 +6,11 @@ Time Complexity of a code is represented using 3 Notations: Omega, Theta and Big
 3. Big O- used to represent the Time Complexity of the Worst Case Scenario(Input size is large). Big O notation is the most used notation because Time Complexity of a code is always defined considering the Worst Case Scenario.
 
 Things to Keep in mind while defining the Time Complexity of a Code:
-
-   1.Only consider the part of code which takes the maximum time to represent the Overall time complexity of the code. Expressions of    other parts of the code will be ignored as these are considered negligible when compared to the Maximum time taken.
+1.Only consider the part of code which takes the maximum time to represent the Overall time complexity of the code. Expressions of    other parts of the code will be ignored as these are considered negligible when compared to the Maximum time taken.
    
-   2.Always consider the Worst Case scenario. Hence, use Big O notation to represent the Time Complexity.
+2.Always consider the Worst Case scenario. Hence, use Big O notation to represent the Time Complexity.
    
-   3.While representing the expression of time complexity ignore the multiplicative and additive constants as they are considered             negligible.
+3.While representing the expression of time complexity ignore the multiplicative and additive constants as they are considered             negligible.
 
 
 Frequently observed Time Complexities:
