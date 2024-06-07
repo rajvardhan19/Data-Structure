@@ -18,10 +18,8 @@ Frequently observed Time Complexities:
 
 1. Constant (Represented as O(1) ) : The time taken does not depend on the Input Size. This relation is the considered the BEST ONE.     Observed in: Fetching a value from an Array through its indexed value, Now in this case we don’t have to iterate through every element of an array instead we have to directly land on the defined index value and fetch the value, hence no matter how big is the array in size, we have our predefined Index in place and we directly go to that index. 
 
-2. Logarithmic (Represented as O(log n) ): As the input is multiplied(increased in size), the no. of operations or Time taken is added. 
-   For eg.:    INPUT 	10	100	1000	10000 —> Here input size is increasing by 10 times
-	         TIME	 1	  2	  3	    4        —> Time is increasing just by 1
-      Observed in: Binary Search
+2. Logarithmic (Represented as O(log n) ): As the input is multiplied(increased in size), the no. of operations or Time taken is added.For eg: For input 10: Time taken= 1 , Input 100: Time Taken=2, Input 1000: Time Taken = 3, Input 10000: Time Taken =4 . Therefore here, as Input size is increased by multiplying with 10, Time taken is increased by just Addition of 1.
+   Observed in: Binary Search
 
 3. Linear (Represented as O(n) ): As the Input size increases, the Time taken/ no. of operations       performed also increases. For eg.: If input size increases by 10, the time taken also increases by 10. Observed in: Linear Search of an element present in an Array. In order find the defined element stored in an array, we iterate through all elements in the entire length of an array searching for the defined array. Hence in this case, the longer is the array, the longer time will be taken to iterate through its length and find the element. As we increase the length, the Time taken will also increase.
 
@@ -29,15 +27,13 @@ Frequently observed Time Complexities:
 
 5. Loglinear (Represented as O(nlog n) ): Log n appears n times. Observed in: Sorting Algorithms.
 
-6. Exponential (Represented as O(Base^n) ): As the input size is added (increased), the time taken is multiplied(exact opposite of Logarithmic Complexity). This is the considered the Worst complexity.
-  For eg.:       INPUT 	1	  2	    3	     4     —> Here input size is increasing by 1
-                 TIME   10	 100	   1000	    10000     —> Time is increasing by power of 10
-  Observed in: Recursion algorithms.
-  In exponential complexities, the Base is equal to the no. of branches from each node.
+6. Exponential (Represented as O(Base^n) ): As the input size is added (increased), the time taken is multiplied(exact opposite of Logarithmic Complexity). This is the considered the Worst complexity.For eg: \n
+For input 1: Time taken= 10 , Input 2: Time Taken=100, Input 3: Time Taken = 100, Input 4: Time Taken =10000 . Therefore here, as Input size is increased by just addition of 1, Time taken is increased by a power of 10.
+  Observed in: Recursion algorithms.In exponential complexities, the Base is equal to the no. of branches from each node.
 
 
 Order of time Complexities:
-CONSTANT< LOGARITHMIC<LINEAR< QUADRATIC < LOGLINEAR < EXPONENTIAL
+CONSTANT< LOGARITHMIC<LINEAR< QUADRATIC < LOGLINEAR < EXPONENTIAL \n
 Greater the Time Complexity, Less efficient is the Code. 
 
 
