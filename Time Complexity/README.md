@@ -6,28 +6,32 @@ Time Complexity of a code is represented using 3 Notations: Omega, Theta and Big
 3. Big O- used to represent the Time Complexity of the Worst Case Scenario(Input size is large). Big O notation is the most used notation because Time Complexity of a code is always defined considering the Worst Case Scenario.
 
 Things to Keep in mind while defining the Time Complexity of a Code:
-Only consider the part of code which takes the maximum time to represent the Overall time complexity of the code. Expressions of other parts of the code will be ignored as these are considered negligible when compared to the Maximum time taken.
-Always consider the Worst Case scenario. Hence, use Big O notation to represent the Time Complexity.
-While representing the expression of time complexity ignore the multiplicative and additive constants as they are considered negligible.
+
+   1.Only consider the part of code which takes the maximum time to represent the Overall time complexity of the code. Expressions of    other parts of the code will be ignored as these are considered negligible when compared to the Maximum time taken.
+   
+   2.Always consider the Worst Case scenario. Hence, use Big O notation to represent the Time Complexity.
+   
+   3.While representing the expression of time complexity ignore the multiplicative and additive constants as they are considered             negligible.
 
 
 Frequently observed Time Complexities:
-Constant (Represented as O(1) ) : The time taken does not depend on the Input Size. This relation is the considered the BEST ONE. Observed in: Fetching a value from an Array through its indexed value, Now in this case we don’t have to iterate through every element of an array instead we have to directly land on the defined index value and fetch the value, hence no matter how big is the array in size, we have our predefined Index in place and we directly go to that index. 
 
-Logarithmic (Represented as O(log n) ): As the input is multiplied(increased in size), the no. of operations or Time taken is added. 
-   For eg.:INPUT 	10	100	1000	10000 —> Here input size is increasing by 10 times
-	         TIME	  1	   2	  3	    4        —> Time is increasing just by 1
+1. Constant (Represented as O(1) ) : The time taken does not depend on the Input Size. This relation is the considered the BEST ONE.     Observed in: Fetching a value from an Array through its indexed value, Now in this case we don’t have to iterate through every element of an array instead we have to directly land on the defined index value and fetch the value, hence no matter how big is the array in size, we have our predefined Index in place and we directly go to that index. 
+
+2. Logarithmic (Represented as O(log n) ): As the input is multiplied(increased in size), the no. of operations or Time taken is added. 
+   For eg.:    INPUT 	10	100	1000	10000 —> Here input size is increasing by 10 times
+	         TIME	 1	  2	  3	    4        —> Time is increasing just by 1
       Observed in: Binary Search
 
-Linear (Represented as O(n) ): As the Input size increases, the Time taken/ no. of operations       performed also increases. For eg.: If input size increases by 10, the time taken also increases by 10. Observed in: Linear Search of an element present in an Array. In order find the defined element stored in an array, we iterate through all elements in the entire length of an array searching for the defined array. Hence in this case, the longer is the array, the longer time will be taken to iterate through its length and find the element. As we increase the length, the Time taken will also increase.
+3. Linear (Represented as O(n) ): As the Input size increases, the Time taken/ no. of operations       performed also increases. For eg.: If input size increases by 10, the time taken also increases by 10. Observed in: Linear Search of an element present in an Array. In order find the defined element stored in an array, we iterate through all elements in the entire length of an array searching for the defined array. Hence in this case, the longer is the array, the longer time will be taken to iterate through its length and find the element. As we increase the length, the Time taken will also increase.
 
-Quadratic  (Represented as O(n^m) ): As input is increased, Time increases quadratically. For eg: if Input Size is doubled, Time increases by 4 times. Observed in: Nested loops.
+4. Quadratic  (Represented as O(n^m) ): As input is increased, Time increases quadratically. For eg: if Input Size is doubled, Time increases by 4 times. Observed in: Nested loops.
 
-Loglinear (Represented as O(nlog n) ): Log n appears n times. Observed in: Sorting Algorithms.
+5. Loglinear (Represented as O(nlog n) ): Log n appears n times. Observed in: Sorting Algorithms.
 
-Exponential (Represented as O(Base^n) ): As the input size is added (increased), the time taken is multiplied(exact opposite of Logarithmic Complexity). This is the considered the Worst complexity.
-  For eg.:       INPUT 	1	  2	    3	     4 —> Here input size is increasing by 1
-	                TIME	10	100	 1000	 10000        —> Time is increasing by power of 10
+6. Exponential (Represented as O(Base^n) ): As the input size is added (increased), the time taken is multiplied(exact opposite of Logarithmic Complexity). This is the considered the Worst complexity.
+  For eg.:       INPUT 	1	  2	    3	     4     —> Here input size is increasing by 1
+                 TIME   10	 100	   1000	    10000     —> Time is increasing by power of 10
   Observed in: Recursion algorithms.
   In exponential complexities, the Base is equal to the no. of branches from each node.
 
